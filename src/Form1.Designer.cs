@@ -1,4 +1,4 @@
-﻿namespace Tetris_2
+namespace Tetris_2
 {
     partial class Form1
     {
@@ -16,8 +16,6 @@
             }
             base.Dispose(disposing);
         }
-
-        #region Windows Form Designer generated code
 
         private void InitializeComponent()
         {
@@ -53,7 +51,5 @@
             this.Controls.Add(this.nextShapeLabel);
             this.Controls.Add(this.nextShapePanel);
         }
-
-        #endregion
     }
 }

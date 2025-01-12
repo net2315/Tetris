@@ -133,11 +133,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wiipa\\OneDrive - Ynov\\Bureau\\Ynov\\Code B2\\c-sharp\\Tetris\\Tetris 2\\Tetris 2.csproj",
+      "projectUniqueName": "C:\\Users\\wiipa\\OneDrive - Ynov\\Bureau\\tetris\\Tetris 2.csproj",
       "projectName": "Tetris 2",
-      "projectPath": "C:\\Users\\wiipa\\OneDrive - Ynov\\Bureau\\Ynov\\Code B2\\c-sharp\\Tetris\\Tetris 2\\Tetris 2.csproj",
+      "projectPath": "C:\\Users\\wiipa\\OneDrive - Ynov\\Bureau\\tetris\\Tetris 2.csproj",
       "packagesPath": "C:\\Users\\wiipa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wiipa\\OneDrive - Ynov\\Bureau\\Ynov\\Code B2\\c-sharp\\Tetris\\Tetris 2\\obj\\",
+      "outputPath": "C:\\Users\\wiipa\\OneDrive - Ynov\\Bureau\\tetris\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

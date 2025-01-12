@@ -7,11 +7,11 @@ namespace Tetris_2
 {
     public partial class Form1 : Form
     {
-        private System.Windows.Forms.Timer gameTimer;
+        private System.Windows.Forms.Timer gameTimer = new System.Windows.Forms.Timer();
         private int score;
-        private Shape currentShape;
-        private Shape nextShape;
-        private int[,] grid;
+        private Shape currentShape = null!;
+        private Shape nextShape = null!;
+        private int[,] grid = null!;
         private const int GridWidth = 20;
         private const int GridHeight = 30;
         private const int CellSize = 20;
@@ -26,14 +26,13 @@ namespace Tetris_2
         {
             score = 0;
             grid = new int[GridWidth, GridHeight];
-            gameTimer = new System.Windows.Forms.Timer();
             gameTimer.Interval = 1000;
             gameTimer.Tick += GameTimer_Tick;
             gameTimer.Start();
             SpawnNewShape();
         }
 
-        private void GameTimer_Tick(object sender, EventArgs e)
+        private void GameTimer_Tick(object? sender, EventArgs e)
         {
             MoveShapeDown();
             gamePanel.Invalidate();
@@ -236,19 +235,19 @@ namespace Tetris_2
             int shapeType = rand.Next(0, 7);
             switch (shapeType)
             {
-                case 0: // I shape
+                case 0:
                     return new Shape(new List<Point> { new Point(0, 0), new Point(1, 0), new Point(2, 0), new Point(3, 0) });
-                case 1: // O shape
+                case 1:
                     return new Shape(new List<Point> { new Point(0, 0), new Point(1, 0), new Point(0, 1), new Point(1, 1) });
-                case 2: // T shape
+                case 2:
                     return new Shape(new List<Point> { new Point(0, 0), new Point(1, 0), new Point(2, 0), new Point(1, 1) });
-                case 3: // S shape
+                case 3:
                     return new Shape(new List<Point> { new Point(1, 0), new Point(2, 0), new Point(0, 1), new Point(1, 1) });
-                case 4: // Z shape
+                case 4:
                     return new Shape(new List<Point> { new Point(0, 0), new Point(1, 0), new Point(1, 1), new Point(2, 1) });
-                case 5: // J shape
+                case 5:
                     return new Shape(new List<Point> { new Point(0, 0), new Point(0, 1), new Point(1, 1), new Point(2, 1) });
-                case 6: // L shape
+                case 6:
                     return new Shape(new List<Point> { new Point(2, 0), new Point(0, 1), new Point(1, 1), new Point(2, 1) });
                 default:
                     return new Shape(new List<Point> { new Point(0, 0) });

@@ -35,7 +35,7 @@ namespace Tetris_2
             this.Controls.Add(quitButton);
         }
 
-        private void PlayButton_Click(object sender, EventArgs e)
+        private void PlayButton_Click(object? sender, EventArgs e)
         {
             this.Hide();
             Form1 gameForm = new Form1();
@@ -43,12 +43,12 @@ namespace Tetris_2
             this.Show();
         }
 
-        private void OptionsButton_Click(object sender, EventArgs e)
+        private void OptionsButton_Click(object? sender, EventArgs e)
         {
-            MessageBox.Show("Options not implemented yet.");
+            MessageBox.Show("No option availble.");
         }
 
-        private void QuitButton_Click(object sender, EventArgs e)
+        private void QuitButton_Click(object? sender, EventArgs e)
         {
             Application.Exit();
         }

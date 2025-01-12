@@ -1,14 +1,12 @@
-namespace Tetris_2;
-
-static class Program
+namespace Tetris_2
 {
-    /// <summary>
-    ///  The main entry point for the application.
-    /// </summary>
-    [STAThread]
-    static void Main()
+    static class Program
     {
-        ApplicationConfiguration.Initialize();
-        Application.Run(new MainMenu());
-    }    
+        [STAThread]
+        static void Main()
+        {
+            ApplicationConfiguration.Initialize();
+            Application.Run(new MainMenu());
+        }    
+    }
 }
