@@ -8,10 +8,18 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>disable</ImplicitUsings>
     <LangVersion>10.0</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="src\MainMenu.cs" />
+    <Compile Include="src\Form1.Designer.cs" />
+    <Compile Include="src\Form1.cs" />
   </ItemGroup>
 
 </Project>
