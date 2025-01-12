@@ -7,11 +7,11 @@ namespace Tetris_2
 {
     public partial class Form1 : Form
     {
-        private System.Windows.Forms.Timer gameTimer = new System.Windows.Forms.Timer();
+        private System.Windows.Forms.Timer gameTimer;
         private int score;
-        private Shape currentShape = null!;
-        private Shape nextShape = null!;
-        private int[,] grid = null!;
+        private Shape currentShape;
+        private Shape nextShape;
+        private int[,] grid;
         private const int GridWidth = 20;
         private const int GridHeight = 30;
         private const int CellSize = 20;
@@ -26,13 +26,14 @@ namespace Tetris_2
         {
             score = 0;
             grid = new int[GridWidth, GridHeight];
+            gameTimer = new System.Windows.Forms.Timer();
             gameTimer.Interval = 1000;
             gameTimer.Tick += GameTimer_Tick;
             gameTimer.Start();
             SpawnNewShape();
         }
 
-        private void GameTimer_Tick(object? sender, EventArgs e)
+        private void GameTimer_Tick(object sender, EventArgs e)
         {
             MoveShapeDown();
             gamePanel.Invalidate();

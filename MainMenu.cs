@@ -45,7 +45,7 @@ namespace Tetris_2
 
         private void OptionsButton_Click(object? sender, EventArgs e)
         {
-            MessageBox.Show("No option availble.");
+            MessageBox.Show("Options not implemented yet.");
         }
 
         private void QuitButton_Click(object? sender, EventArgs e)

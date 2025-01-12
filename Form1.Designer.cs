@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+
 namespace Tetris_2
 {
     partial class Form1

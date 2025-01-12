@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+
 namespace Tetris_2
 {
     static class Program
@@ -5,8 +8,10 @@ namespace Tetris_2
         [STAThread]
         static void Main()
         {
-            ApplicationConfiguration.Initialize();
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainMenu());
-        }    
+        }
     }
 }
